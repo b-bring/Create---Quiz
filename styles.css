@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  sans-serif;
+}
+.quiz{
+    margin: 30px;
+    margin: 30px auto;
+    width: 600px;
+    padding: 20px;
+    background-color: rgb(216, 218, 219);
+    position: relative;
+}
+
+.quiz .info{
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+
+
+}
+
+.quiz .info .category{
+    flex: 1;
+}
+.quiz .info .count{
+    flex: 1;
+    text-align: right;
+}
+
+
+.quiz .question{
+padding: 10px;
+background-color: white;
+margin:10px auto;
+display: flex;
+font-size: 15px;
+    border-radius: 5px;
+
+}
+
+.quiz .question h2{
+    margin: 0;
+    padding: 0;
+}
+
+.quiz .answers{
+    margin-bottom: 20px;
+}
+
+.quiz .answers .answer{
+    padding: 10px;
+    background-color: rgb(248, 246, 246);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    color: grey;
+    position: relative;
+}
+
+.quiz .answers .answer:not(:last-child){
+    border-bottom: solid 2px rgb(185, 183, 183) ;
+}
+
+.quiz .answers .answer input[type="radio"]:checked+label{
+    color: rgb(16, 82, 236);
+    cursor: pointer;
+}
+
+.quiz .answers .answer input[type="radio"]:checked{
+    background-color: red;
+}
+
+.quiz .answers .answer input[type="radio"]+label{
+    cursor: pointer;
+}
+
+.quiz button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+
+
+.quiz .bullets {
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+    display: flex;
+    padding: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.quiz .bullets .right {
+    flex: 1;
+    display: flex;
+}
+
+.quiz .bullets .right span {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.quiz .bullets .right span.on {
+    background-color: #0075ff;
+}
+
+
+.quiz .results span {
+    font-weight: bold;
+}
+
+.quiz .results span.bad {
+    color: #dc0a0a;
+}
+
+.quiz .results span.good {
+    color: #009688;
+}
+
+.quiz .results span.perfect {
+    color: #0075ff;
+}
